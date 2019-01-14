@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Arvo" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="t-center">Survey Form</h1>
+        </header>
+        <main>
+            <p id="description" class="t-center">
+                Let us know how we can improve CodeSchool
+            </p>
+            <form id="survey-form">
+                <!-- row has max width of 960 px  -->
+                <div class="row">
+                    <!-- center the div in large viewport width with a fixed width of box =500px only in large viewports  -->
+                    <div class="box-center w-400 full">
+                        <label for="name" id="name-label">1. Enter your Name</label>
+                        <input id="name" type="text" placeholder="Name" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="box-center w-400 full">
+                        <label for="email" id="email-label">2. Enter your Email</label>
+                        <input id="email" type="email" placeholder="Email" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="box-center w-400 full ">
+                        <label for="number" id="number-label">3. Enter your Age</label>
+                        <input id="number" type="number" min="1" max="150" placeholder="Age">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="box-center w-400 full">
+                        <label for="dropdown">4. Which option best describes your current role?</label>
+                        <select id="dropdown">
+                            <option disabled value="">--Please choose an option--</option>
+                            <option value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full time learner</option>
+                            <option value="others">Others</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="box-center w-400 full">
+                        <p>5. How likely is that you would recommend CodeSchool to a friend?</p>
+                        <div class="radio-container">
+                            <input type="radio" id="very-likely" name="recommend" value="very-likely">
+                            <label class="radio-checkbox" for="very-likely">Very Likely</label>
+
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" id="definitely" name="recommend" value="definitely">
+                            <label class="radio-checkbox" for="definitely">Definitely</label>
+
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" id="maybe" name="recommend" value="maybe">
+                            <label class="radio-checkbox" for="maybe">Maybe</label>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="box-center w-400 full">
+                        <p>6. Things that should be improved in the future
+                            (Check all that apply)</p>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="front-end" name="frontend" value="yes">
+                            <label for="front-end" class="radio-checkbox">Front-end Projects</label>
+
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="back-end" name="backend" value="yes">
+                            <label for="back-end" class="radio-checkbox">Back-end Projects</label>
+
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="api" name="api" value="yes">
+                            <label for="api" class="radio-checkbox">APIs</label>
+
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="data-vis" name="data-vis" value="yes">
+                            <label for="data-vis" class="radio-checkbox">Data Visualization</label>
+
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="open-community" name="open-community" value="yes">
+                            <label for="open-community" class="radio-checkbox">Open Source Community</label>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="box-center w-400 full">
+                        <label for="comments">Any Comments or Suggestions?</label>
+                        <textarea id="comments" placeholder="Write Something here"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="box-center w-400 full flex">
+                        <button id="submit">
+                            Submit
+
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </form>
+
+
+        </main>
+    </div>
+</body>
+
+</html>
